@@ -12,7 +12,7 @@ sentiment_pipeline = pipeline(
     max_length=512
 )
 
-def load_data(filepath="Hotel_Reviews.csv", sample_size=500):
+def load_data(filepath="hotel_reviews_sample.csv", sample_size=1000):
     df = pd.read_csv(filepath)
     df = df[['Hotel_Name', 'Reviewer_Nationality', 'Reviewer_Score',
              'Positive_Review', 'Negative_Review']].dropna()
