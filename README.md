@@ -1,6 +1,6 @@
 # Hotel Review Sentiment Analysis
 
-An end-to-end NLP project that performs sentiment analysis, aspect-based analysis, and topic modeling on Kaggle's 500K+ real European hotel reviews using state-of-the-art transformer models.
+An end-to-end NLP project that performs sentiment analysis, aspect-based analysis, and topic modeling on Kaggle's 500K+ real European hotel reviews with transformer models.
 
 
 ## Features
