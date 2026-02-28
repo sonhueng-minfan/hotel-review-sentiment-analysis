@@ -1,9 +1,9 @@
-# 🏨 Hotel Review Sentiment Analysis
+# Hotel Review Sentiment Analysis
 
 An end-to-end NLP project that performs sentiment analysis, aspect-based analysis, and topic modeling on Kaggle's 500K+ real European hotel reviews using state-of-the-art transformer models.
 
 
-## 🚀 Features
+## Features
 
 - **BERT Sentiment Analysis** — Classifies each review as Positive or Negative using a pretrained DistilBERT transformer model
 - **Aspect-Based Sentiment** — Scores guest sentiment specifically for Rooms, Staff, Food, Cleanliness, and Location
@@ -14,7 +14,7 @@ An end-to-end NLP project that performs sentiment analysis, aspect-based analysi
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Tool | Purpose |
 |------|---------|
@@ -27,32 +27,14 @@ An end-to-end NLP project that performs sentiment analysis, aspect-based analysi
 | NLTK | Text preprocessing |
 | WordCloud | Word cloud generation |
 
----
-
-## 📁 Project Structure
-
-```
-hotel-review-sentiment-analysis/
-├── app.py                  # Main Streamlit dashboard
-├── sentiment_analysis.py   # BERT sentiment pipeline
-├── aspect_sentiment.py     # Aspect-based sentiment analysis
-├── topic_modeling.py       # LDA topic modeling
-├── setup_nltk.py           # One-time NLTK resource downloader
-├── requirements.txt        # Python dependencies
-├── .gitignore              # Ignored files (venv, CSV, cache)
-└── README.md               # This file
-```
-
----
-
-## 📂 File Explanations
+## File Explanations
 
 ### `app.py`
 The main application file that runs the Streamlit dashboard. It imports from all other modules and organizes everything into 4 tabs:
-- **📊 Sentiment Dashboard** — KPI metrics, sentiment distribution, reviewer score analysis, review length vs sentiment, nationality insights, hotel leaderboard (top/bottom 10), hotel comparison tool, word clouds, and a raw data table. Includes sidebar filters for sentiment, nationality, hotel name, and minimum score, plus a CSV export button.
-- **🏷️ Aspect Analysis** — Runs BERT on review sentences to score sentiment for each of 5 hotel aspects (Rooms, Staff, Food, Cleanliness, Location). Displays results as bar charts and a radar chart.
-- **🔍 Topic Modeling** — Runs LDA to discover hidden themes across reviews. Users can choose the number of topics and sample size before computing.
-- **🤖 Try It Yourself** — A live text input where users can type any review and receive an instant BERT sentiment prediction with a confidence score gauge.
+- **Sentiment Dashboard** — KPI metrics, sentiment distribution, reviewer score analysis, review length vs sentiment, nationality insights, hotel leaderboard (top/bottom 10), hotel comparison tool, word clouds, and a raw data table. Includes sidebar filters for sentiment, nationality, hotel name, and minimum score, plus a CSV export button.
+- **Aspect Analysis** — Runs BERT on review sentences to score sentiment for each of 5 hotel aspects (Rooms, Staff, Food, Cleanliness, Location). Displays results as bar charts and a radar chart.
+- **Topic Modeling** — Runs LDA to discover hidden themes across reviews. Users can choose the number of topics and sample size before computing.
+- **Try It Yourself** — A live text input where users can type any review and receive an instant BERT sentiment prediction with a confidence score gauge.
 
 ---
 
@@ -105,13 +87,9 @@ Only needs to be run once before launching the app for the first time.
 
 ---
 
-## ⚙️ How to Run
+## How to Run
 
 ### 1. Clone the repository
-```bash
-git clone https://github.com/YOUR_USERNAME/hotel-review-sentiment-analysis.git
-cd hotel-review-sentiment-analysis
-```
 
 ### 2. Install dependencies
 ```bash
@@ -129,9 +107,9 @@ python setup_nltk.py
 - Place it in the root of the project folder
 
 ### 5. Launch the app
-```bash
+
 python -m streamlit run app.py
-```
+
 
 The app will open automatically at `http://localhost:8501`
 
@@ -139,7 +117,7 @@ The app will open automatically at `http://localhost:8501`
 
 ---
 
-## 📦 requirements.txt
+## requirements.txt
 
 ```
 pandas
@@ -157,7 +135,7 @@ pyLDAvis
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 [515K Hotel Reviews Data in Europe](https://www.kaggle.com/datasets/jiashenliu/515k-hotel-reviews-data-in-europe) — Kaggle
 
@@ -165,7 +143,7 @@ Contains 515,000+ reviews for 1,493 hotels across Europe, including reviewer nat
 
 ---
 
-## 💡 Resume Bullet Points
+## Resume Bullet Points (For me lol)
 
 - Built an end-to-end NLP pipeline processing 500+ hotel reviews using Python, HuggingFace Transformers (DistilBERT), and Pandas
 - Implemented aspect-based sentiment analysis to score guest experience across 5 hotel dimensions (rooms, staff, food, cleanliness, location)
